@@ -141,3 +141,11 @@ hr {
 .underline{
   text-decoration: underline;
 }
+
+a{
+  background-color: rgb(149, 92, 175);
+}
+
+#experience{
+  background-color: rgb(223, 197, 245);
+}

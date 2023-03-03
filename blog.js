@@ -47,8 +47,13 @@ function createPost(data) {
     `&nbsp&nbsp&nbsp<a class = "edit-click"><em><u>Edit</u></em></a>&nbsp&nbsp&nbsp
     <a class = "delete-click"><em><u>Delete</u></em></a>`;
     let editClick = document.getElementsByClassName("edit-click")[count-1];
-    let deleteClick = document.getElementsByClassName("delete-click")[count-1];
+    editClick.onmouseover = function() {editClick.style.color = "#3598c6";};
+    editClick.onmouseout = function() {editClick.style.color = "black";};
     editClick.addEventListener("click", ()=> {fillFormForEdit(editClick)});
+    
+    let deleteClick = document.getElementsByClassName("delete-click")[count-1];
+    deleteClick.onmouseover = function() {deleteClick.style.color = "#3598c6";};
+    deleteClick.onmouseout = function() {deleteClick.style.color = "black";};
     deleteClick.addEventListener("click", ()=> {remove(deleteClick)});
     return;
 }
